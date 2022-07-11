@@ -1,1 +1,1 @@
-# JavascriptChallanges-A-Template
+# Javascript Challanges Template
