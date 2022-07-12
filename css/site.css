@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bsicon {
-    color: #8c13fd ;
+    color: #8c13fd;
 }
 
 .jsicon {
@@ -53,17 +53,25 @@ h1,h2,h3,h4,h5,h6 {
     color: #369cd6;
 }
 
+.checklist>li i {
+    color: var(--secondary-color);
+}
 
+code[class*="language-"],
+pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
 
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 5rem;
 }
+
 .sticky-footer {
     position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
 }
-
-
