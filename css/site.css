@@ -1,36 +1,36 @@
 :root {
-    --primary-color: #1d5888;
-    --secondary-color: #ff993b;
-    --dark-color: #292929;
-    --white-color: #dff3e4;
+    --background-primary: #eff0f3;
+    --background-secondary: #f3d2c1;
+    
+    --stroke: #0d0d0d;
+    --main: #eff0f3;
+    --highlight: #ff8e3c;
+    --secondary: #fffffe;
+    --tertiary: #d9376e;
+
+    /*Pallet https://www.happyhues.co/palettes/14*/
 }
 
 body {
-    color: var(--dark-color);
-}
-
-nav {
-    background-color: var(--dark-color);
-}
-
-footer {
-    background-color: var(--dark-color);
-    padding-right: 1rem;
-}
-
-footer .social>a {
-    color: var(--white-color);
-    opacity: .75;
-}
-
-
-footer .social>a:hover {
-    opacity: .9;
-    color: var(--secondary-color);
+    background-color: var(--background-primary);
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: var(--primary-color);
+    color: var(--stroke);
+}
+
+footer {
+    padding-right: 1rem;
+}
+
+.icon {
+    color: white;
+    opacity: .75;
+}
+
+.icon:hover {
+    color: var(--highlight);
+    opacity: .9;
 }
 
 .logo {
@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .checklist>li i {
-    color: var(--secondary-color);
+    color: var(--highlight);
 }
 
 code[class*="language-"],
@@ -74,4 +74,14 @@ main>.container {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.glass {
+    /* From https://css.glass */
+background: #3c63ff33;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
